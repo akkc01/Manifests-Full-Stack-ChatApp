@@ -17,17 +17,17 @@ spec:
     spec:
       containers:
       - name: chatapp-frontend
-        image: trainwithshubham/chatapp-frontend
+        image: akkc01/chatappfrontend:d579e079c69bfc6f00c1639369504c50a75bd8ed
         ports:
         - containerPort: 80
-        
-        resources:
-          requests:
-            memory: "128Mi"
-            cpu: "250m"
-          limits:
-            memory: "256Mi"
-            cpu: "500m"
+
+        # resources:
+        #   requests:
+        #     memory: "128Mi"
+        #     cpu: "250m"
+        #   limits:
+        #     memory: "256Mi"
+        #     cpu: "500m"
 
         env:
         - name: NODE_ENV
